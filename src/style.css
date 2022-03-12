@@ -56,7 +56,7 @@ p {
   font-size: 20px;
 }
 .information {
-  border: thick double#BAD7DF;
+  border: solid#BAD7DF;
   border-radius: 8px;
   padding-top: 1px;
   font-family: Georgia, "Times New Roman", Times, serif;
