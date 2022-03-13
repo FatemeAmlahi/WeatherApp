@@ -30,6 +30,9 @@ p {
   font-size: 14px;
   text-decoration: none;
 }
+.tempChange {
+  font-size: 17px;
+}
 
 .content {
   max-width: 580px;
