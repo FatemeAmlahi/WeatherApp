@@ -59,6 +59,7 @@ p {
 }
 .state {
   font-size: 20px;
+  text-transform: capitalize;
 }
 .information {
   border: solid#BAD7DF;

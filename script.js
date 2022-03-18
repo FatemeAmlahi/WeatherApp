@@ -66,5 +66,6 @@ function showTemprature(response) {
   document.querySelector(
     "#humidity"
   ).innerHTML = `${response.data.main.humidity}%`;
-  console.log(response.data);
+  document.querySelector("#state").innerHTML =
+    response.data.weather[0].description;
 }
