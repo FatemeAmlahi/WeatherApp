@@ -26,12 +26,14 @@ form {
   padding-top: 2rem;
 }
 p {
-  text-align: center;
   font-size: 14px;
-  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
 }
 .tempChange {
-  font-size: 17px;
+  font-size: 15px;
+  position: relative;
+  top: -13px;
 }
 
 .content {
