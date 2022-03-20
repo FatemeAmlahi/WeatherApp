@@ -13,7 +13,7 @@ ul {
 li {
   display: inline-block;
   margin: 0 15px;
-  border: solid #d0e9f0;
+  border: solid#f9f7fe;
   border-radius: 8px;
   transition: all 0.5s ease-in-out;
 }
@@ -42,7 +42,7 @@ p {
   padding: 30px;
   border: solid #f6f6f6;
   border-radius: 8px;
-  background-color: #d0e9f0;
+  background-color: #f9f7fe;
   padding-bottom: 30px;
 }
 .row {
@@ -62,7 +62,7 @@ p {
   text-transform: capitalize;
 }
 .information {
-  border: solid#BAD7DF;
+  border: solid#d7c9fc;
   border-radius: 8px;
   padding-top: 1px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -76,7 +76,7 @@ p {
 }
 .button {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: #7ebaca;
+  background-color: #885df1;
   border-color: #bad7df;
   border-radius: 8px;
   transition: all 0.5s ease-in-out;
