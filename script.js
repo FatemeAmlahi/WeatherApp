@@ -68,4 +68,10 @@ function showTemprature(response) {
   ).innerHTML = `${response.data.main.humidity}%`;
   document.querySelector("#state").innerHTML =
     response.data.weather[0].description;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
+changeCity("Tehran");
