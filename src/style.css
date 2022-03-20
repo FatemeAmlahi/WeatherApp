@@ -13,7 +13,7 @@ ul {
 li {
   display: inline-block;
   margin: 0 15px;
-  border: solid #bad7df;
+  border: solid #d0e9f0;
   border-radius: 8px;
   transition: all 0.5s ease-in-out;
 }
@@ -42,7 +42,7 @@ p {
   padding: 30px;
   border: solid #f6f6f6;
   border-radius: 8px;
-  background-color: #f6f6f6;
+  background-color: #d0e9f0;
   padding-bottom: 30px;
 }
 .row {
@@ -76,7 +76,7 @@ p {
 }
 .button {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: #bad7df;
+  background-color: #7ebaca;
   border-color: #bad7df;
   border-radius: 8px;
   transition: all 0.5s ease-in-out;
