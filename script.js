@@ -48,6 +48,9 @@ let locationForm = document.querySelector("#location-form");
 locationForm.addEventListener("submit", changeCity);
 
 function showTemprature(response) {
+  celsiusTemp = response.data.main.temp;
+  celsiusTempHigh = response.data.main.temp_max;
+  celsiusTempLow = response.data.main.temp_min;
   document.querySelector(
     "#city"
   ).innerHTML = `${response.data.name},${response.data.sys.country}`;
@@ -76,10 +79,20 @@ function showTemprature(response) {
 }
 function showFahrenheitTemp(event) {
   event.preventDefault();
-  let fahrenheitTemprature = (10 * 9) / 5 + 32;
-  alert(fahrenheitTemprature);
+  let tempratureElement = document.querySelector("#temp");
+
+  let fahrenheitTemprature = (celsiusTemp * 9) / 5 + 32;
+  tempratureElement.innerHTML = Math.round(fahrenheitTemprature);
+  document.querySelector("#high").innerHTML = `${Math.round(
+    (celsiusTempHigh * 9) / 5 + 32
+  )}°F`;
+  document.querySelector("#low").innerHTML = `${Math.round(
+    (celsiusTempLow * 9) / 5 + 32
+  )}°F`;
 }
 let fahrenheit = document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", showFahrenheitTemp);
 
 let celsiusTemp = null;
+let celsiusTempHigh = null;
+let celsiusTempLow = null;
