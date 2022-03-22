@@ -74,3 +74,12 @@ function showTemprature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
+function showFahrenheitTemp(event) {
+  event.preventDefault();
+  let fahrenheitTemprature = (10 * 9) / 5 + 32;
+  alert(fahrenheitTemprature);
+}
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", showFahrenheitTemp);
+
+let celsiusTemp = null;
